@@ -99,7 +99,7 @@ bl_main(void)
 	// Do some simple debouncing on the bootloader-entry
 	// strap/button.
 	debounce_count = 0;
-	for (i = 0; i < 255; i++) {
+	for (i = 0; i < 255U; i++) {
 		if (BUTTON_BOOTLOAD == BUTTON_ACTIVE)
 			debounce_count++;
 	}
